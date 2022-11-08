@@ -1,19 +1,23 @@
-import java.util.Scanner;
+class Phone {
+    String model;
+    String color;
+    int price;
+}
 
 public class Main3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        Phone galaxy = new Phone();
+        galaxy.model = "Galaxy10";
+        galaxy.color = "Black";
+        galaxy.price = 100;
 
-        Scanner sc = new Scanner(System.in);
-        int score = sc.nextInt();
+        Phone iphone =new Phone();
+        iphone.model = "iPhoneX";
+        iphone.color = "Black";
+        iphone.price = 200;
 
-        if(score >= 90){
-            System.out.println("A등급입니다.");
-        }else if(score >= 80){
-            System.out.println("B등급입니다.");
-        }else if(score >= 70){
-            System.out.println("C등급입니다.");
-        }else{
-            System.out.println("F등급입니다.");
-        }
+
+        System.out.println("철수는 이번에 " + galaxy.model + galaxy.color + " + 색상을 " + galaxy.price + "만원에 샀다.");
+        System.out.println("영희는 이번에 " + iphone.model + iphone.color + " + 색상을 " + iphone.price + "만원에 샀다.");
     }
 }

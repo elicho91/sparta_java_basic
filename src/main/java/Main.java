@@ -7,7 +7,7 @@ public class Main {
         int number = 5;
         System.out.println(number);
 
-        //문자
+        //문자열
         String sparta = "Hello Sparta";
         System.out.println(sparta);
 
@@ -90,7 +90,7 @@ public class Main {
         System.out.println(num1/num2);
         System.out.println(num1%num2);
 
-        //대입
+        //**대입
         num1 += num2;
         System.out.println(num1); //30
 
